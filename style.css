@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Jost', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    padding-top: 100px;
+    background-color:#f5f4f3;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10%;
+    transition: all .4s;
+}
+
+header.sticky {
+    background: #fff;
+    padding: 15px 10%;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+}
+
+.logo img {
+    max-width: 300px;
+    height: auto;
+    cursor: auto;
+}
+
+.navmenu {
+    display: flex;
+}
+
+.navmenu a {
+    color: #2c2c2c;
+    font-size: 20px;
+    padding: 15px 20px;
+    font-weight: 400;
+    transition: all .45s ease;
+}
+
+.navmenu a:hover {
+    color: #EE1C47;
+}
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon i {
+   margin-right: 20px; 
+   color: #2c2c2c;
+   font-size: 25px;
+   font-weight: 400;
+   transition: all .45s ease;
+}
+
+.nav-icon i:hover {
+    transform: scale(1.1);
+    color: #EE1C47;
+}
+
+#menu-icon {
+    font-size: 30px;
+    color: #2c2c2c;
+    z-index: 101;
+    cursor: pointer;
+
+}
+
+section {
+    padding: 5% 10%;
+}
+
+.main-home {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-image: url(imagens/Cadeira3.1.png);
+    background-position: center;
+    background-size: cover;
+    background-color:#f5f4f3;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+
+.main-text h5 {
+    color: #EE1C47;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.main-text h1 {
+    color: #000;
+    font-size: 65px;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+}
+
+.main-text p {
+    color: #333c56;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.main-btn {
+    display: inline-block;
+    color: #111;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid #111;
+    padding: 12px 25px;
+    transition: all .5s ease;
+}
+
+.main-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.main-btn i {
+    vertical-align: middle;
+}
+
+.center-text h2 {
+    color: #111;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.center-text span {
+    color: #EE1C47;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 2rem;
+}
+
+.row {
+    position: relative;
+    transition: all .4s ;
+}
+
+.row img {
+    width: 100%;
+    height: auto;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.row img:hover {
+    transform: scale(0.95);
+}
+
+.product-text h5 {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #27b737;
+    padding: 3px 10px;
+    border: 2px;
+}
+
+.heart-icon {
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.heart-icon:hover {
+    color: #EE1C47;
+}
+
+.ratings i{
+    color: #FF8C00;
+    font-size: 18px;
+}
+
+.price h4 {
+    color: #111;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.price p {
+    color: #151515;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.client-reviews {
+    background-color: #F3F4F6;
+}
+
+.reviews {
+    text-align: center;
+}
+
+.reviews h3 {
+    color: #111;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+}
+
+.reviews img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+.reviews p {
+    color: #707070;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.reviews .p2 {
+    font-size: 20px;
+}
+
+.reviews h2 {
+    font-size: 22px;
+    color: #000;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 25px;
+    margin-bottom: 2px;
+}
+
+.contact-section {
+    background-color: #F3F4F6;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    gap: 3rem;
+}
+
+.first-info img {
+    max-width: 150px;
+    height: auto;
+}
+
+.contact-info h4 {
+    color: #212529;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    cursor: default;
+}
+
+.contact-info p {
+    color: #565656;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.contact-info p:hover {
+    color: #EE1C47;
+}
+
+.social-icon i {
+    color: #565656;
+    margin-right: 18px;
+    font-size: 20px;
+    transition: all .5s;
+}
+
+.social-icon i:hover {
+    transform: scale(1.2);
+}
+
+.social-icon .bxl-facebook:hover {
+    color: #1877F2;
+}
+
+.social-icon .bxl-twitter:hover {
+    color: #1DA1F2;
+}
+
+.social-icon .bxl-instagram:hover {
+    color: #962fbf;
+}
+
+.social-icon .bxl-youtube:hover {
+    color: #FF0000;
+}
+
+.social-icon .bxl-linkedin:hover {
+    color: #0e76a8;
+}
+
+.end-text {
+    background-color: #f0f9f2;
+    text-align: center;
+    padding: 20px;
+}
+
+.participants {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 50px;
+    color: #fff;
+}
+
+.participants h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+} 
+
+.participants p {
+    font-weight: 400;
+    font-size: 16px;
+} 
+
+/* Reponsividade */
+@media(max-width: 890px) {
+    header {
+        padding: 20px 3%;
+        transition: .4s;
+    }
+}
+
+@media(max-width: 630px) {
+    .main-text h1 {
+        font-size: 50px;
+        transition: .4s;
+    }
+
+    .main-text p {
+        font-size: 18px;
+        transition: .4s;
+    }
+
+    .main-btn {
+        padding: 10px 20px;
+    }
+}
+
+@media(max-width:750px) {
+    .navmenu {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 130vh;
+        background: #edfff1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 120px 30px;
+        transition: all .4s;
+    }
+
+    .navmenu a { 
+        display: block;
+        margin: 18px 0;
+    }
+
+    .navmenu.open {
+        right: 0;
+    }
+}
+
+
+
+

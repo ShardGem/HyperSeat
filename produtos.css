@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Jost', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    padding-top: 100px;
+    background-color:#f5f4f3;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10%;
+    transition: all .4s;
+}
+
+header.sticky {
+    background: #fff;
+    padding: 15px 10%;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+}
+
+.logo img {
+    max-width: 300px;
+    height: auto;
+    cursor: auto;
+}
+
+.navmenu {
+    display: flex;
+}
+
+.navmenu a {
+    color: #2c2c2c;
+    font-size: 20px;
+    padding: 15px 20px;
+    font-weight: 400;
+    transition: all .45s ease;
+}
+
+.navmenu a:hover {
+    color: #EE1C47;
+}
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon i {
+   margin-right: 20px; 
+   color: #2c2c2c;
+   font-size: 25px;
+   font-weight: 400;
+   transition: all .45s ease;
+}
+
+.nav-icon i:hover {
+    transform: scale(1.1);
+    color: #EE1C47;
+}
+
+#menu-icon {
+    font-size: 30px;
+    color: #2c2c2c;
+    z-index: 101;
+    cursor: pointer;
+
+}
+
+section {
+    padding: 3% 10%;
+}
+
+.produtos-titulo h1 {
+    font-size: 36px;
+}
+
+.aplicar button {
+    margin-left: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+#formProduto label,
+#formProduto input,
+#formProduto textarea,
+#formProduto button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.container-tabelas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tabela-itens,
+.tabela-produtos {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tabela-itens th,
+.tabela-itens td,
+.tabela-produtos th,
+.tabela-produtos td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/*Adicionar larguras específicas para cada célula*/
+.tabela-itens th:first-child,
+.tabela-produtos th:first-child,
+.tabela-itens td:first-child,
+.tabela-produtos td:first-child {
+    width: 12%; 
+}
+
+.tabela-itens th:nth-child(2),
+.tabela-produtos th:nth-child(2),
+.tabela-itens td:nth-child(2),
+.tabela-produtos td:nth-child(2) {
+    width: 12%; 
+}
+
+.tabela-itens th:nth-child(3),
+.tabela-produtos th:nth-child(3),
+.tabela-itens td:nth-child(3),
+.tabela-produtos td:nth-child(3) {
+    width: 12%; 
+}
+
+.tabela-itens th:nth-child(4),
+.tabela-produtos th:nth-child(4),
+.tabela-itens td:nth-child(4),
+.tabela-produtos td:nth-child(4) {
+    width: 12%; 
+}
+
+.tabela-itens th:nth-child(5),
+.tabela-produtos th:nth-child(5),
+.tabela-itens td:nth-child(5),
+.tabela-produtos td:nth-child(5) {
+    width: 42%;
+}
+
+.tabela-itens th:nth-child(6),
+.tabela-itens td:nth-child(6) {
+    width: 8%;
+    text-align: center;
+}
+
+.tabela-produtos th:nth-child(6),
+.tabela-produtos td:nth-child(6) {
+    text-align: center;
+    width: 4%;
+}
+
+.tabela-produtos th:nth-child(7),
+.tabela-produtos td:nth-child(7) {
+    text-align: center;
+    width: 4%;
+}
+
+.tabela-produtos a .bxs-edit-alt,
+.tabela-produtos a .bxs-trash-alt {
+    color: #2c2c2c;
+    transition: .4s;
+}
+
+.tabela-produtos a .bxs-edit-alt:hover {
+    color: #1cabee;
+}
+
+.tabela-produtos a .bxs-trash-alt:hover {
+    color: #EE1C47;
+}
+
+.end-text {
+    background-color: #f0f9f2;
+    text-align: center;
+    padding: 20px;
+}
